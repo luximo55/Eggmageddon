@@ -4,8 +4,8 @@ using UnityEngine;
 
 public class PlayerCombat : MonoBehaviour
 {
-    public int playerLives = 5;
-    public int playerAttack = 1;
+    public int playerLives = 10;
+    public int playerAttack = 2;
     private Collider2D playerCollider;
     public bool hit = false;
     public bool enemyDetect = false;
