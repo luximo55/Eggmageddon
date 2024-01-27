@@ -20,4 +20,9 @@ public class PlayerAnimator : MonoBehaviour
         Debug.Log("HittingAnim");
         anim.SetTrigger("IsHit");
     }
+
+    public void NotMoving()
+    {
+        anim.SetTrigger("IsNotMoving");
+    }
 }

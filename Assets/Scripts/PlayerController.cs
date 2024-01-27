@@ -22,7 +22,7 @@ public class PlayerController : MonoBehaviour
 
     }
 
-
+    
 
 
 
@@ -43,6 +43,10 @@ public class PlayerController : MonoBehaviour
                 }
 
             }
+        }
+        else if (movementInput == Vector2.zero)
+        {
+            playerAnimator.NotMoving();
         }
 
 
