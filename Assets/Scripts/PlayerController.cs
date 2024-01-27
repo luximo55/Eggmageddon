@@ -11,13 +11,14 @@ public class PlayerController : MonoBehaviour
     Rigidbody2D rb;
     public ContactFilter2D movementFilter;
     List<RaycastHit2D> castCollisions = new List<RaycastHit2D>();
+    private PlayerAnimator playerAnimator;
 
 
     void Start()
     {
 
         rb = gameObject.GetComponent<Rigidbody2D>();
-
+        playerAnimator = GetComponent<PlayerAnimator>();
 
     }
 
@@ -30,7 +31,7 @@ public class PlayerController : MonoBehaviour
         if (movementInput != Vector2.zero)
         {
             bool success = TryMove(movementInput);
-
+            playerAnimator.Moving();
             if (!success)
             {
                 success = TryMove(new Vector2(movementInput.x, 0));
@@ -38,7 +39,7 @@ public class PlayerController : MonoBehaviour
                 if (!success)
                 {
                     success = TryMove(new Vector2(0, movementInput.y));
-
+                    
                 }
 
             }

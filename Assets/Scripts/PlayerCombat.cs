@@ -13,6 +13,7 @@ public class PlayerCombat : MonoBehaviour
     public bool attackInterval = true;
     private GameObject enemy;
     public GameManager gameManager;
+    public PlayerAnimator playerAnimator;
     [SerializeField] private GameObject player;
     [SerializeField] private float timer = 0.1f;
     [SerializeField] private Fixer kB;
@@ -29,6 +30,7 @@ public class PlayerCombat : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.Space) && attackInterval)
         {
+            playerAnimator.Hitting();
             enemyDetect = true;
             attackInterval = false;
             kB.knockBack = true;
