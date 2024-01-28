@@ -3,6 +3,7 @@ using TMPro;
 using UnityEngine;
 using System.Collections;
 using System.Collections.Generic;
+using UnityEngine.SceneManagement;
 using Random = UnityEngine.Random;
 
 
@@ -30,7 +31,11 @@ public class Dialogue : MonoBehaviour
         
         textComponent.text = string.Empty;
         // ShuffleIndexes();
-        StartDialogue();
+        if (SceneManager.GetActiveScene().buildIndex == 1)
+        {
+            StartDialogue();
+        }
+
     }
 
     // Update is called once per frame
