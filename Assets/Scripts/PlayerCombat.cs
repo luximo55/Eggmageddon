@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class PlayerCombat : MonoBehaviour
 {
@@ -14,6 +15,7 @@ public class PlayerCombat : MonoBehaviour
     private GameObject enemy;
     public GameManager gameManager;
     public PlayerAnimator playerAnimator;
+    public Text PlayerLivesText;
     [SerializeField] private GameObject player;
     [SerializeField] private float timer = 0.1f;
     [SerializeField] private Fixer kB;
@@ -24,6 +26,7 @@ public class PlayerCombat : MonoBehaviour
     {
         playerCollider = GetComponent<Collider2D>();
         player = GameObject.FindWithTag("Player");
+        PlayerLivesText.text = playerLives.ToString();
     }
 
     void Update()
@@ -66,7 +69,7 @@ public class PlayerCombat : MonoBehaviour
                 playerLives -= ec.enemyAttack;
                 // Dialogue.dialogueTriggered = true;
                 
-                
+                PlayerLivesText.text = playerLives.ToString();
                 Debug.Log($"Lives {playerLives}");
                 ec.attacked = false;
             }
