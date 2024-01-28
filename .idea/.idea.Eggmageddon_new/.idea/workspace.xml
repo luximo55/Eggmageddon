@@ -5,13 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7053534c-b14c-43c3-bb2a-1ab584f05ed3" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/EnemyPrefab.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/EnemyPrefab.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Eggmageddon_new/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Eggmageddon_new/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Prefabs/EnemySpawner.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/EnemySpawner.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/Level1.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Level1.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Dialogue.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Dialogue.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/EnemyCombat.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/EnemyCombat.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/PlayerCombat.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/PlayerCombat.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/TextMesh Pro/Resources/Fonts &amp; Materials/LiberationSans SDF - Fallback.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Resources/Fonts &amp; Materials/LiberationSans SDF - Fallback.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -108,7 +104,7 @@
       <updated>1706383964235</updated>
       <workItem from="1706383965376" duration="4093000" />
       <workItem from="1706396058576" duration="4602000" />
-      <workItem from="1706401794533" duration="1323000" />
+      <workItem from="1706401794533" duration="1917000" />
     </task>
     <servers />
   </component>

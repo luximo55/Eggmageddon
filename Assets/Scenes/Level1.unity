@@ -1274,8 +1274,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -1.8, y: 0}
-  m_SizeDelta: {x: 1200, y: 100}
+  m_AnchoredPosition: {x: 0.000030518, y: 0}
+  m_SizeDelta: {x: 902.48, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &937200304
 MonoBehaviour:
@@ -1299,8 +1299,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: New Text
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 900b06bf97e7fb347b2fb9395daf47b6, type: 2}
+  m_sharedMaterial: {fileID: -7012529046868905948, guid: 900b06bf97e7fb347b2fb9395daf47b6, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -1331,7 +1331,7 @@ MonoBehaviour:
   m_fontSizeMin: 18
   m_fontSizeMax: 72
   m_fontStyle: 0
-  m_HorizontalAlignment: 1
+  m_HorizontalAlignment: 2
   m_VerticalAlignment: 512
   m_textAlignment: 65535
   m_characterSpacing: 0
@@ -1360,7 +1360,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 299.33612, y: -28.254757, z: 287.11853, w: -24.435688}
+  m_margin: {x: -9.208832, y: -4.011879, z: -3.7954712, w: -24.435688}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
@@ -2554,7 +2554,7 @@ MonoBehaviour:
   - "This is Kre\u0161imir, he's a-uh... He is special. Yeah! Special, that's the
     right word."
   - What the quack?
-  - My grandma is faster than this!
+  - My grandma fights better.
   - I'm only friends with 25 letters of the alphabet. I don't know Y.
   - Attoms are untrustworthy little critters. They make up everything.
   - Last time I got caught stealing a calendar I got 12 months.
@@ -2573,7 +2573,7 @@ MonoBehaviour:
   - {fileID: 8300000, guid: 81dce5a385c85bd43b0deb1dec0231a4, type: 3}
   - {fileID: 8300000, guid: 946af2082be3db4439d301392acaffd8, type: 3}
   - {fileID: 8300000, guid: f645e14648a69a84baaaafaccfdeb6d2, type: 3}
-  textSpeed: 0.05
+  textSpeed: 0.07
   vocal: {fileID: 11400000, guid: 208a734a2b2a0c349a08815a0d7d8706, type: 2}
   audioSource: {fileID: 122432972}
 --- !u!114 &1803598421
