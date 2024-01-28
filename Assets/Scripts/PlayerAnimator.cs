@@ -25,4 +25,9 @@ public class PlayerAnimator : MonoBehaviour
     {
         anim.SetTrigger("IsNotMoving");
     }
+
+    public void Death()
+    {
+        anim.SetTrigger("DEATH");
+    }
 }

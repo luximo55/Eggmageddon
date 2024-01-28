@@ -75,7 +75,7 @@ public class PlayerCombat : MonoBehaviour
             {
                 Debug.Log("Player Died");
                 
-                gameManager.GameOver();
+                StartCoroutine(AfterDeath());
             }
         }
     }
@@ -91,7 +91,10 @@ public class PlayerCombat : MonoBehaviour
 
     private IEnumerator AfterDeath()
     {
-        yield return new WaitForSeconds(2f);
+        Debug.Log("pimpek");
+        playerAnimator.Death();
+        yield return new WaitForSeconds(2);
+        gameManager.GameOver();
     }
 
 
