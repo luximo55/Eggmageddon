@@ -29,7 +29,7 @@ public class PlayerController : MonoBehaviour
     {
         xDirection = Input.GetAxis("Horizontal");
     
-        Debug.Log(xDirection);
+        //Debug.Log(xDirection);
         
         if(xDirection >0 && facingRight == false)
         {

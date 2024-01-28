@@ -10,6 +10,7 @@ public class GameManager : MonoBehaviour
     public GameObject GameOverPanel;
     public GameObject DialogueBox;
     public GameObject ESCMenuPanel;
+    public bool IsPaused = false;
 
     public void Restart()
     {
@@ -31,8 +32,10 @@ public class GameManager : MonoBehaviour
     {
         if(Input.GetKeyDown(KeyCode.Escape))
         {
-            ESCMenuPanel.SetActive(true);
-            Time.timeScale = 0;
+            IsPaused = !IsPaused; 
+            ESCMenuPanel.SetActive(IsPaused);
+            float PausedTime = IsPaused ? 0 : 1;
+            Time.timeScale = PausedTime;
         }
     }
 

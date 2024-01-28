@@ -22,7 +22,7 @@ public class EnemyKnockBack : MonoBehaviour
                 rb.constraints = RigidbodyConstraints2D.FreezePositionY;
                 Debug.Log("Boom");
                 Vector2 difference = transform.position - other.transform.position;
-                transform.position = new Vector2(transform.position.x - difference.x, transform.position.y + difference.y);
+                transform.position = new Vector2(transform.position.x - difference.x, transform.position.y + difference.y * 0.25f);
             }
 
         }

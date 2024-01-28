@@ -134,14 +134,14 @@ PrefabInstance:
     - target: {fileID: 2695978166929624045, guid: 7fe8f949ebe08d74faef42d3ab357854, type: 3}
       propertyPath: enemyType
       value: 
-      objectReference: {fileID: 1799057340245057374, guid: 8a8dfd1f6a56d1c48bc19dcfa5bc4479, type: 3}
+      objectReference: {fileID: 7696482505287259328, guid: 67c07af6eb3f471489a9c9429f2da827, type: 3}
     - target: {fileID: 2695978166929624045, guid: 7fe8f949ebe08d74faef42d3ab357854, type: 3}
       propertyPath: numberOfEnemies
       value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 2721237182918794949, guid: 7fe8f949ebe08d74faef42d3ab357854, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 1.5
+      value: 5.5
       objectReference: {fileID: 0}
     - target: {fileID: 2721237182918794949, guid: 7fe8f949ebe08d74faef42d3ab357854, type: 3}
       propertyPath: m_LocalPosition.y
@@ -389,7 +389,7 @@ Transform:
   m_GameObject: {fileID: 32225213}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -6.8310757, y: -0.9258599, z: -10}
+  m_LocalPosition: {x: -6.828768, y: -0.9258599, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1827,6 +1827,7 @@ MonoBehaviour:
   GameOverPanel: {fileID: 2056402499}
   DialogueBox: {fileID: 1803598418}
   ESCMenuPanel: {fileID: 350494556}
+  IsPaused: 0
 --- !u!4 &687657078
 Transform:
   m_ObjectHideFlags: 0
@@ -2201,7 +2202,7 @@ Transform:
   m_GameObject: {fileID: 812957277}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -6.8310757, y: -0.9258599, z: -10}
+  m_LocalPosition: {x: -6.828768, y: -0.9258599, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:

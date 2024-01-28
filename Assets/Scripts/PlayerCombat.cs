@@ -61,6 +61,7 @@ public class PlayerCombat : MonoBehaviour
         enemy = GameObject.FindWithTag("Enemy");
         if (enemy != null)
         {
+            Debug.Log(enemy.GetComponent<EnemyCombat>().attacked);
             if (enemy.GetComponent<EnemyCombat>().attacked)
             {
                 playerLives -= attackPower;
@@ -75,7 +76,6 @@ public class PlayerCombat : MonoBehaviour
                 Debug.Log("Player Died");
                 
                 gameManager.GameOver();
-                player.SetActive(false);
             }
         }
     }

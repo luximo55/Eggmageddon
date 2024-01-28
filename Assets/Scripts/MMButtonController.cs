@@ -9,6 +9,7 @@ public class MMButtonController : MonoBehaviour
    [SerializeField] private GameObject howToPlayPanel;
    public void PlayButton()
    {
+      Time.timeScale = 1;
       SceneManager.LoadScene(1);
    }
 
