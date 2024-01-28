@@ -14,7 +14,8 @@ public class PlayerController : MonoBehaviour
     List<RaycastHit2D> castCollisions = new List<RaycastHit2D>();
     private PlayerAnimator playerAnimator;
     private bool facingRight = true;
-    private float xDirection;
+    public float xDirection;
+    public bool punchRight;
 
     void Start()
     {
@@ -33,10 +34,12 @@ public class PlayerController : MonoBehaviour
         if(xDirection >0 && facingRight == false)
         {
             Flip();
+            punchRight = true;
         }
         else if(xDirection < 0 && facingRight == true)
         {
             Flip();
+            punchRight = false;
         }
 
     }

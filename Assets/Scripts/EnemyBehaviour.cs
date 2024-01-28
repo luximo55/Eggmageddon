@@ -17,6 +17,7 @@ public class EnemyBehaviour : MonoBehaviour
     //private Animator anim;
     private Vector2 movement;
     public Vector3 dir;
+    
 
     private bool isInChaseRange;
     private bool isInAttackRange;
@@ -26,6 +27,8 @@ public class EnemyBehaviour : MonoBehaviour
 
     private void Start()
     {
+       
+        
         rb = GetComponent<Rigidbody2D>();
         // anim = GetComponent<Animator>();
         target = GameObject.FindWithTag("Player").transform;
@@ -82,9 +85,15 @@ public class EnemyBehaviour : MonoBehaviour
 
     void Flip()
     {
+        StartCoroutine(waitforswitch());
         facingRight = !facingRight;
         Vector3 scaler = transform.localScale;
         scaler.x *= -1;
         transform.localScale = scaler;
+    }
+
+    IEnumerator waitforswitch()
+    {
+        yield return new WaitForSeconds(0.5f);
     }
 }

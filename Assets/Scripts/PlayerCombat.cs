@@ -73,6 +73,7 @@ public class PlayerCombat : MonoBehaviour
             if (playerLives <= 0)
             {
                 Debug.Log("Player Died");
+                StartCoroutine(AfterDeath());
                 gameManager.GameOver();
                 player.SetActive(false);
             }
@@ -87,5 +88,10 @@ public class PlayerCombat : MonoBehaviour
         enemyDetect = false;
     }
 
-    
+    private IEnumerator AfterDeath()
+    {
+        yield return new WaitForSeconds(2f);
+    }
+
+
 }
