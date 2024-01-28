@@ -56,20 +56,19 @@ public class PlayerCombat : MonoBehaviour
         kB.knockBack = false;
     }
 
-    public void attackedPlayer(int attackPower)
+    public void attackedPlayer(GameObject gO)
     {
-        enemy = GameObject.FindWithTag("Enemy");
-        if (enemy != null)
-        {
-            Debug.Log(enemy.GetComponent<EnemyCombat>().attacked);
-            if (enemy.GetComponent<EnemyCombat>().attacked)
+        //enemy = GameObject.FindWithTag("Enemy");
+            EnemyCombat ec = gO.GetComponent<EnemyCombat>(); 
+            Debug.Log(ec.attacked);
+            if (ec.attacked)
             {
-                playerLives -= attackPower;
+                playerLives -= ec.enemyAttack;
                 // Dialogue.dialogueTriggered = true;
                 
                 
                 Debug.Log($"Lives {playerLives}");
-                enemy.GetComponent<EnemyCombat>().attacked = false;
+                ec.attacked = false;
             }
             if (playerLives <= 0)
             {
@@ -77,7 +76,6 @@ public class PlayerCombat : MonoBehaviour
                 
                 StartCoroutine(AfterDeath());
             }
-        }
     }
 
     private IEnumerator Attacking()
@@ -91,7 +89,6 @@ public class PlayerCombat : MonoBehaviour
 
     private IEnumerator AfterDeath()
     {
-        Debug.Log("pimpek");
         playerAnimator.Death();
         yield return new WaitForSeconds(2);
         gameManager.GameOver();

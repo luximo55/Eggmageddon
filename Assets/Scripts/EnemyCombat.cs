@@ -40,7 +40,7 @@ public class EnemyCombat : MonoBehaviour
                 Dialogue.lineSay = true;
                 Debug.Log("Compare");
                 attacked = true;
-                player.GetComponent<PlayerCombat>().attackedPlayer(enemyAttack);
+                player.GetComponent<PlayerCombat>().attackedPlayer(gameObject);
             }
         }
     }

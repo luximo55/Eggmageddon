@@ -17,7 +17,7 @@ GameObject:
   - component: {fileID: 8931167630483409679}
   - component: {fileID: 1866357866145443619}
   m_Layer: 0
-  m_Name: EnemyPrefab 2
+  m_Name: EnemyRacoon
   m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -182,8 +182,8 @@ CapsuleCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.0000005298191, y: 0}
-  m_Size: {x: 1.1892669, y: 2}
+  m_Offset: {x: 0.0021965504, y: -0.010986}
+  m_Size: {x: 0.8157439, y: 0.8157439}
   m_Direction: 0
 --- !u!114 &8931167630483409679
 MonoBehaviour:
@@ -211,7 +211,7 @@ Animator:
   m_GameObject: {fileID: 1799057340245057374}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 65abe76da704d584bae1399b05588445, type: 2}
+  m_Controller: {fileID: 9100000, guid: 33596ce07ed03fa4a98951f93875fb49, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
