@@ -21,6 +21,9 @@ public class EnemyBehaviour : MonoBehaviour
     private bool isInChaseRange;
     private bool isInAttackRange;
 
+    private bool facingRight = true;
+    private float xDirection;
+
     private void Start()
     {
         rb = GetComponent<Rigidbody2D>();
@@ -44,6 +47,20 @@ public class EnemyBehaviour : MonoBehaviour
             //anim.SetFloat("X", dir.x);
             //anim.SetFloat("Y", dir.y); 
         }
+
+
+        xDirection = Input.GetAxis("Horizontal");
+
+        Debug.Log(xDirection);
+
+        if (xDirection > 0 && facingRight == false)
+        {
+            Flip();
+        }
+        else if (xDirection < 0 && facingRight == true)
+        {
+            Flip();
+        }
     }
 
     private void FixedUpdate()
@@ -61,5 +78,13 @@ public class EnemyBehaviour : MonoBehaviour
     private void MoveCharacter(Vector2 dir)
     {
         rb.MovePosition((Vector2)transform.position + (dir * speed * Time.deltaTime));
+    }
+
+    void Flip()
+    {
+        facingRight = !facingRight;
+        Vector3 scaler = transform.localScale;
+        scaler.x *= -1;
+        transform.localScale = scaler;
     }
 }
