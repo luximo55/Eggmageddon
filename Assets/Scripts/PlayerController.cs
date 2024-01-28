@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.InputSystem;
+using UnityEngine.UIElements;
 
 public class PlayerController : MonoBehaviour
 {
@@ -12,7 +13,8 @@ public class PlayerController : MonoBehaviour
     public ContactFilter2D movementFilter;
     List<RaycastHit2D> castCollisions = new List<RaycastHit2D>();
     private PlayerAnimator playerAnimator;
-
+    private bool facingRight = true;
+    private float xDirection;
 
     void Start()
     {
@@ -22,9 +24,22 @@ public class PlayerController : MonoBehaviour
 
     }
 
+    private void Update()
+    {
+        xDirection = Input.GetAxis("Horizontal");
     
+        Debug.Log(xDirection);
+        
+        if(xDirection >0 && facingRight == false)
+        {
+            Flip();
+        }
+        else if(xDirection < 0 && facingRight == true)
+        {
+            Flip();
+        }
 
-
+    }
 
     private void FixedUpdate()
     {
@@ -39,7 +54,6 @@ public class PlayerController : MonoBehaviour
                 if (!success)
                 {
                     success = TryMove(new Vector2(0, movementInput.y));
-                    
                 }
 
             }
@@ -48,9 +62,6 @@ public class PlayerController : MonoBehaviour
         {
             playerAnimator.NotMoving();
         }
-
-
-
     }
 
     private bool TryMove(Vector2 direction)
@@ -76,7 +87,12 @@ public class PlayerController : MonoBehaviour
     {
         movementInput = movementValue.Get<Vector2>();
     }
-
+    void Flip()
+    {
+        facingRight = !facingRight;
+        Vector3 Scaler = transform.localScale;
+        Scaler.x *= -1;
+    }
 
 
 

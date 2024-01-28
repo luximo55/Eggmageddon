@@ -25,27 +25,23 @@ public class EnemyCombat : MonoBehaviour
         }
     }
 
-    private void OnTriggerStay2D(Collider2D other)
+    private void OnTriggerEnter2D(Collider2D other)
     {
         if (player != null)
         {
             if (player.GetComponent<PlayerCombat>().hit)
             {
-                player.GetComponent<PlayerCombat>().hit = false;
                 enemyLives--;
                 LifeCheck();
+                player.GetComponent<PlayerCombat>().hit = false;
             }
-        }
-    }
-
-    private void OnTriggerEnter2D(Collider2D other)
-    {
-        if(other.CompareTag("Player"))
-        {
-            Dialogue.lineSay = true;
-            Debug.Log("Compare");
-            attacked = true;
-            player.GetComponent<PlayerCombat>().attackedPlayer(enemyAttack);
+            if(other.CompareTag("Player"))
+            {
+                Dialogue.lineSay = true;
+                Debug.Log("Compare");
+                attacked = true;
+                player.GetComponent<PlayerCombat>().attackedPlayer(enemyAttack);
+            }
         }
     }
 }
