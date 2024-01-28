@@ -31,7 +31,7 @@ public class Dialogue : MonoBehaviour
         
         textComponent.text = string.Empty;
         // ShuffleIndexes();
-        if (SceneManager.GetActiveScene().buildIndex == 1)
+        if (SceneManager.GetActiveScene().buildIndex == 2)
         {
             StartDialogue();
         }
