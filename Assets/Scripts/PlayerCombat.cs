@@ -64,7 +64,7 @@ public class PlayerCombat : MonoBehaviour
             if (enemy.GetComponent<EnemyCombat>().attacked)
             {
                 playerLives -= attackPower;
-                Dialogue.dialogueTriggered = true;
+                // Dialogue.dialogueTriggered = true;
                 
                 
                 Debug.Log($"Lives {playerLives}");

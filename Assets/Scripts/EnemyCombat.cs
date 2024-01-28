@@ -10,6 +10,7 @@ public class EnemyCombat : MonoBehaviour
     private Collider2D enemyCollider;
     private GameObject player;
     public bool attacked = false;
+    public Dialogue dial;
     private void Awake()
     {
         enemyCollider = GetComponent<Collider2D>();
@@ -41,9 +42,10 @@ public class EnemyCombat : MonoBehaviour
     {
         if(other.CompareTag("Player"))
         {
+            Dialogue.lineSay = true;
             Debug.Log("Compare");
             attacked = true;
-                player.GetComponent<PlayerCombat>().attackedPlayer(enemyAttack);
+            player.GetComponent<PlayerCombat>().attackedPlayer(enemyAttack);
         }
     }
 }
