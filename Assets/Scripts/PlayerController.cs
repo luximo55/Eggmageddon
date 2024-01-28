@@ -16,7 +16,7 @@ public class PlayerController : MonoBehaviour
     private bool facingRight = true;
     public float xDirection;
     public bool punchRight;
-
+    
     void Start()
     {
 

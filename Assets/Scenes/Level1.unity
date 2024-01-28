@@ -5443,6 +5443,10 @@ PrefabInstance:
       value: Player
       objectReference: {fileID: 0}
     - target: {fileID: 3640709428094453546, guid: 4375cc638b8e68d4d8d2c9ae3e5689fb, type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 424657097}
+    - target: {fileID: 3640709428094453546, guid: 4375cc638b8e68d4d8d2c9ae3e5689fb, type: 3}
       propertyPath: Dialogue
       value: 
       objectReference: {fileID: 1803598420}
