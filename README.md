@@ -6,11 +6,11 @@ The game is about a boy who meets a duck that sends him on a quest to find its e
 You have to fight all enemies in your way!
 
 # Team
-Programmers:
-Marin Bogdanović
-Klara Kuzmić
-Tin Grilec
+Programmers:<br>
+Marin Bogdanović,<br>
+Klara Kuzmić,<br>
+Tin Grilec<br>
 
-Artists:
-Emi Rusan
-Ema Šoštarić
+Artists:<br>
+Emi Rusan,<br>
+Ema Šoštarić<br>
