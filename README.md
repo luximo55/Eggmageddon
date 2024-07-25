@@ -14,3 +14,6 @@ Tin Grilec<br>
 Artists:<br>
 Emi Rusan,<br>
 Ema Šoštarić<br>
+
+# Screenshots
+![Screenshot 2024-01-28 165241](https://github.com/user-attachments/assets/52e4b5fd-e0ea-4e97-a3af-7be5bf709bbd)
